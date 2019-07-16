@@ -5,7 +5,6 @@ pipeline {
   environment {
     ORG = 'sweetinn'
     APP_NAME = 'multi-tennent'
-    CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
     DOCKER_REGISTRY_ORG = 'sweetinn'
   }
   stages {
