@@ -18,7 +18,7 @@ pipeline {
         HELM_RELEASE = "$PREVIEW_NAMESPACE".toLowerCase()
       }
       steps {
-        sh "echo $BRANCH_NAME"
+        sh "echo $CHANGE_TITLE"
       }
     }
     stage('CI Build by rnd') {
