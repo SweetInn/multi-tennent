@@ -2,6 +2,7 @@ pipeline {
   // agent {
   //   label "my-jenkins-jenkins-slave"
   // }
+  podTemplate{
   node("my-jenkins-jenkins-slave") {
   environment {
     ORG = 'sweetinn'
@@ -74,6 +75,7 @@ pipeline {
         }
       }
     }
+  }
   }
   }
 }
