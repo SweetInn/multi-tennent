@@ -1,7 +1,8 @@
 pipeline {
-  agent {
-    label "my-jenkins-jenkins-slave"
-  }
+  // agent {
+  //   label "my-jenkins-jenkins-slave"
+  // }
+  node("my-jenkins-jenkins-slave") {
   environment {
     ORG = 'sweetinn'
     APP_NAME = 'multi-tennent'
@@ -73,5 +74,6 @@ pipeline {
         }
       }
     }
+  }
   }
 }
