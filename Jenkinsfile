@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label "jenkins-slave-microservices"
+    label "my-jenkins-jenkins-slave"
   }
   environment {
     ORG = 'sweetinn'
